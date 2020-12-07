@@ -15,7 +15,7 @@ module.exports = {
                       'address_parts.street': {
                         'query': 'street value',
                         'analyzer': 'peliasQuery',
-                        'slop': 4
+                        'slop': 5
                       }
                     }
                   }
