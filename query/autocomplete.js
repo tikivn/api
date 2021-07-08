@@ -178,13 +178,8 @@ function generateQuery( clean ){
     textParser( clean, vs );
   }
 
-  if (clean.fuzziness) {
-    vs.var('fuzzy:fuzziness', clean.fuzziness);
-
-    if (clean.max_expansions) {
-      vs.var('fuzzy:max_expansions', clean.max_expansions);
-    }
-  }
+  vs.var('fuzzy:fuzziness', 2);
+  vs.var('fuzzy:max_expansions', 50);
 
   // set the 'add_name_to_multimatch' variable only in the case where one
   // or more of the admin variables are set.
