@@ -1,6 +1,6 @@
 const logger = require('pelias-logger').get('api');
 const app = require('./app'),
-    port = ( process.env.PORT || 80 ),
+    port = ( process.env.PORT || 3100 ),
     host = ( process.env.HOST || undefined );
 
 const server = app.listen( port, host, () => {
