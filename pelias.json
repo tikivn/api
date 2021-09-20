@@ -1,7 +1,7 @@
 {
     "esclient": {
         "hosts": [{
-        "host": "localhost",
+        "host": "pelias-elasticsearch",
         "port": 9200
         }]
     },
