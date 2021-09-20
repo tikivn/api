@@ -68,6 +68,8 @@ deployment_config:
             - path: /
               port: '80'
     replicaCount: 1
+    envVars:
+      PELIAS_CONFIG: ./pelias.json
   prod:
     ingress:
       hosts:
@@ -76,3 +78,5 @@ deployment_config:
             - path: /
               port: '80'
     replicaCount: 1
+    envVars:
+      PELIAS_CONFIG: ./pelias.json
