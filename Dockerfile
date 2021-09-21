@@ -13,7 +13,7 @@ RUN npm install
 COPY . ${WORK}
 
 # copy schema folder
-ADD schema /home/pelias/schema
+# ADD schema /home/pelias/schema
 
 # only allow containers to succeed if tests pass
 RUN npm test
