@@ -1,4 +1,4 @@
-## Attribution
+## Attributionn
 * Geocoding by [Pelias](https://pelias.io).
 * Data from
    * [OpenStreetMap](http://www.openstreetmap.org/copyright) © OpenStreetMap contributors under [ODbL](http://opendatacommons.org/licenses/odbl/). Also see the [OSM Geocoding Guidelines](https://wiki.osmfoundation.org/wiki/Licence/Community_Guidelines/Geocoding_-_Guideline) for acceptable use.
