@@ -1,0 +1,24 @@
+{
+    "esclient": {
+        "hosts": [{
+        "host": "pelias-elasticsearch",
+        "port": 9200
+        }]
+    },
+    "api": {
+        "services": {
+            "libpostal": {
+                "url": "http://pelias-libpostal.dev.tiki.services"
+            },
+            "placeholder": {
+                "url": "http://pelias-placeholder.dev.tiki.services"
+            }
+        }
+    },
+    "imports": {
+        "whosonfirst": {
+            "countryCode": "VN",
+            "datapath": "/data/placeholder"
+        }
+    }
+}
