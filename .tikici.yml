@@ -70,6 +70,13 @@ deployment_config:
     replicaCount: 1
     envVars:
       PELIAS_CONFIG: ./pelias.json
+    volumes:
+      - name: pelias-placeholder-poneglyph
+        persistentVolumeClaim:
+          claimName: pelias-placeholder
+    volumeMounts:
+      - mountPath: /data/placeholder
+        name: pelias-placeholder-poneglyph
   prod:
     ingress:
       hosts:
@@ -80,3 +87,10 @@ deployment_config:
     replicaCount: 1
     envVars:
       PELIAS_CONFIG: ./pelias.json
+    volumes:
+      - name: pelias-placeholder-poneglyph
+        persistentVolumeClaim:
+          claimName: pelias-placeholder
+    volumeMounts:
+      - mountPath: /data/placeholder
+        name: pelias-placeholder-poneglyph
