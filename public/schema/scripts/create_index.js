@@ -15,6 +15,7 @@ try {
   child_process.execSync( `node ${__dirname}/check_version.js "${SUPPORTED_ES_VERSIONS}"`);
 } catch (e) {
   console.error(`unsupported elasticsearch version. try: ${SUPPORTED_ES_VERSIONS}\n`);
+  console.log(e)
   process.exit(1);
 }
 
