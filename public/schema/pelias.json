@@ -1,17 +1,17 @@
 {
     "esclient": {
         "hosts": [{
-        "host": "pelias-elasticsearch",
-        "port": 9200
+            "host": "delivery-es-http.elasticsearch.svc",
+            "port": 9200
         }]
     },
     "api": {
         "services": {
             "libpostal": {
-                "url": "http://pelias-libpostal.dev.tiki.services"
+                "url": "http://pelias-libpostal.tiki.services"
             },
             "placeholder": {
-                "url": "http://pelias-placeholder.dev.tiki.services"
+                "url": "http://pelias-placeholder-api.tiki.services"
             }
         }
     }
