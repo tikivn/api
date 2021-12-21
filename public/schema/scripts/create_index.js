@@ -11,13 +11,12 @@ cli.header("create index");
 const client = new es.Client(config.esclient);
 
 // check minimum elasticsearch versions before continuing
-try {
-  child_process.execSync( `node ${__dirname}/check_version.js "${SUPPORTED_ES_VERSIONS}"`);
-} catch (e) {
-  console.error(`unsupported elasticsearch version. try: ${SUPPORTED_ES_VERSIONS}\n`);
-  console.log(e)
-  process.exit(1);
-}
+// try {
+//   child_process.execSync( `node ${__dirname}/check_version.js "${SUPPORTED_ES_VERSIONS}"`);
+// } catch (e) {
+//   console.error(`unsupported elasticsearch version. try: ${SUPPORTED_ES_VERSIONS}\n`);
+//   process.exit(1);
+// }
 
 // check mandatory plugins are installed before continuing
 try {
