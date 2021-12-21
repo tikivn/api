@@ -12,7 +12,7 @@ const client = new es.Client(config.esclient);
 
 // check minimum elasticsearch versions before continuing
 try {
-  child_process.execSync(`node ${__dirname}/check_version.js "${SUPPORTED_ES_VERSIONS}"`);
+  child_process.execSync( `node ${__dirname}/check_version.js "${SUPPORTED_ES_VERSIONS}"`);
 } catch (e) {
   console.error(`unsupported elasticsearch version. try: ${SUPPORTED_ES_VERSIONS}\n`);
   process.exit(1);
