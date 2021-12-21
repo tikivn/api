@@ -21,7 +21,8 @@ client.info(null, (err, res) => {
   }
 
   const version = _.get(res, 'version.number', '0.0.0');
-  consogle.log(`version ${version}`)
+  console.log(`version ${version}`)
+  console.error(`version ${version}`)
 
   // pretty print error message
   if (!semver.satisfies(version, targetVersion)) {
