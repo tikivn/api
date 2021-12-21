@@ -85,8 +85,12 @@ deployment_config:
             - path: /
               port: '3100'
     replicaCount: 1
+    resources:
+      requests:
+        cpu: '500m'
+        memory: 2Gi
     envVars:
-      PELIAS_CONFIG: ./pelias.json
+      PELIAS_CONFIG: ./pelias.prod.json
     volumes:
       - name: pelias-placeholder-poneglyph
         persistentVolumeClaim:
