@@ -4,7 +4,10 @@
       "host": "delivery-es-http.elasticsearch.svc",
       "port": 9200,
       "protocol": "https"
-    }]
+    }],
+    "auth": {
+      "apiKey": "2iyPsdu9Sjm3XG-sJFjOLA"
+    }
   },
   "api": {
     "services": {
