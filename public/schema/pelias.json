@@ -4,7 +4,8 @@
             "host": "delivery-es-http.elasticsearch.svc",
             "port": 9200,
             "protocol": "https",
-            "httpAuth": "delivery_manager:tnsl_tms_123"
+            "httpAuth": "delivery_manager:tnsl_tms_123",
+            "auth": "delivery_manager:tnsl_tms_123"
         }]
     },
     "api": {
