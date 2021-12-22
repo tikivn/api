@@ -4,7 +4,10 @@
             "host": "delivery_manager:tnsl_tms_123@delivery-es-http.elasticsearch.svc",
             "port": 9200,
             "protocol": "https"
-        }]
+        }],
+        "auth": {
+            "ApiKey": "2iyPsdu9Sjm3XG-sJFjOLA"
+        }
     },
     "api": {
         "services": {
