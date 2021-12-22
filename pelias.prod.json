@@ -2,7 +2,10 @@
   "esclient": {
     "hosts": [{
       "host": "delivery-es-http.elasticsearch.svc",
-      "port": 9200
+      "port": 9200,
+      "protocol": "https",
+      "httpAuth": "delivery_manager:Tiki@123",
+      "auth": "delivery_manager:Tiki@123"
     }]
   },
   "api": {
