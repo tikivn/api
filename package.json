@@ -78,10 +78,6 @@
     "tape": "^5.1.1"
   },
   "pre-commit": [
-    "lint",
-    "prune",
-    "validate",
-    "test"
   ],
   "release": {
     "branch": "master",
