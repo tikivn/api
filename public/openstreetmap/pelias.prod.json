@@ -1,0 +1,24 @@
+{
+  "esclient": {
+    "hosts": [{
+      "host": "delivery-es-http.elasticsearch.svc",
+      "port": 9200
+    }]
+  },
+  "api": {
+    "services": {
+      "libpostal": {
+        "url": "http://pelias-libpostal.tiki.services"
+      },
+      "placeholder": {
+        "url": "http://pelias-placeholder-api.tiki.services"
+      }
+    }
+  },
+  "imports": {
+    "openstreetmap": {
+      "countryCode": "VN",
+      "datapath": "/data/placeholder"
+    }
+  }
+}
